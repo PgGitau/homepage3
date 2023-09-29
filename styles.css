@@ -1568,6 +1568,7 @@ a {
   .seller-container {
     /* border: 2px solid black; */
     margin-bottom: 6rem;
+    overflow: hidden;
   }
 
   .seller-container .how-cta {
