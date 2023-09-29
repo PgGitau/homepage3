@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  
+    <!-- AOS -->
+    <script src="./resources/aos/aos.js" defer></script>
+    <link href="./resources/aos/aos.css" rel="stylesheet" >
+  
+    <!-- COUNTER -->
+    <script src="./resources/purecounter/purecounter_vanilla.js" defer></script>
+  
+    <!-- FONT AWESOME -->
+    <!-- fontawesome -->
+    <link href="./resources/fontawesome/css/all.css" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/c72cbdb9b9.js" crossorigin="anonymous"></script> -->
+  
+    <!-- SWIPER -->
+    <link href="./resources/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="./resources/swiper/swiper-bundle.min.js" defer></script>
+    
+    <!-- MAIN JS -->
+    <script src="./main.js" defer></script>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+    <header id="header" class="header-container header-transparent">
+        <div class="navbar-container">
+
+            <div class="logo">
+                <h2>NICEDIRECT</h2>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul class="navbar-links">
+                    <li><a class="nav-link active" href="/">Home</a></li>
+                    <li><a class="nav-link" href="#about">Shop Coffee</a></li>
+                    <li class="dropdown"><a href="#"><span>Expo</span> <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a routerLink="/Expo">NICE Expo</a></li>
+                            <li><a href="#">Sponsors</a></li>
+                            <li><a href="#">Exhibitors</a></li>
+                            <li><a href="#">Register for NICE Expo</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Origin Trip</span><i class="fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Nyeri Origin Trip</a></li>
+                            <li><a href="#">Origin Trip Tips</a></li>
+                            <li><a href="#">Itinerary</a></li>
+                            <li><a href="#">Register for Origin Trip</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>About Us</span><i class="fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">How NiceDirect Works</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <ul class="cart-icon">
+                    <li class="cart"><i class="fa-solid fa-bag-shopping" value=0></i></li>
+                </ul>
+                
+                <i class="bi bi-list mobile-nav-toggle"></i>
+                
+            </nav>
+            
+            <div class="credentials-nonmobile">
+                <ul class="navbar-login" *ngIf="!user">
+                    <li>
+                        <button mat-raised-button (click)="showLoginDialog()" type="button" class="btn btn-dark"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Log
+                            In</button>
+                    </li>
+                    <li>
+                        <button mat-raised-button (click)="showSignUpDialog()" type="button"
+                            class="btn btn-outline-dark"><i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;&nbsp;Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="homepage-container">
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="hero swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide one">
+                    <div class="image">
+                        <img src="./resources/hero1.jpg" alt="farm">
+                    </div>
+
+                    <div class="hero-content">
+                        <h1>Why settle for secondhand when you can have it direct from farm?</h1>
+                        <p class="hero-par2">100% Direct | 100% Transparent | 100% Pure Coffee</p>
+                        <div class="hero-button">
+                            <a class="hero-btn" routerLink="/Coffee" role="button">BUY NOW&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide two">
+
+                    <div class="hero-content">
+                        <h1>Pick your favorite coffee roast</h1>
+                        <p class="hero-par2">100% Direct | 100% Transparent | 100% Pure Coffee</p>
+                        <div class="hero-button">
+                            <a class="hero-btn" routerLink="/Coffee" role="button">BUY NOW&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide three">
+                    <div class="image">
+                        <img src="./resources/hero5.jpg" alt="hero">                    
+                    </div>
+
+                    <div class="hero-content">
+                        <h1>Shop and get up to 15% off your coffee</h1>
+                        <p class="hero-par2">100% Direct | 100% Transparent | 100% Pure Coffee</p>
+                        <div class="hero-button">
+                            <a class="hero-btn" routerLink="/Coffee" role="button">BUY NOW&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <!-- End Hero -->
+
+        <section id="farmers" class="farmers">
+            <div class="farmers-container">
+
+                <div class="section-title farmer-header" data-aos="fade-in" data-aos-delay="100">
+                    <h2>Meet the Farmers Behind Your Brew</h2>
+                    <div class="divider">
+
+                    </div>
+                    <p>Click on a farmer from our list below to shop their exceptional coffee straight from their farm.
+                        Experience the connection from farm to cup like never before.
+                    </p>
+                </div>
+
+                <div class="farmer-list">
+                    <a href="#" class="farmer farmer-one">
+                        <div>
+                            <p>Riaikania Coffee Factory <br>
+                              <i class="fa-solid fa-location-dot"></i>&nbsp; Nyeri, Kenya.
+                            </p>
+                        </div>
+                    </a>
+
+                    <div class="farmer farmer-two">
+                        <p>Riaikania Coffee Factory<br><i class="fa-solid fa-location-dot"></i>&nbsp; Kabati, Kenya.
+                          </p>
+                    </div>
+
+                    <div class="farmer farmer-three">
+                        <p>Riaikania Coffee Factory <br>
+                            <i class="fa-solid fa-location-dot"></i>&nbsp; Limuru, Kenya.
+                          </p>
+                    </div>
+
+                    <div class="farmer farmer-four">
+                        <p>Riaikania Coffee Factory <br>
+                            <i class="fa-solid fa-location-dot"></i>&nbsp; Nakuru, Kenya.
+                          </p>
+                    </div>
+
+                    <div class="farmer farmer-five">
+                        <p>Riaikania Coffee Factory <br>
+                            <i class="fa-solid fa-location-dot"></i>&nbsp; Murang'a, Kenya.
+                          </p>
+                    </div>
+
+                    <div class="farmer farmer-six">
+                        <p>Riaikania Coffee Factory <br>
+                            <i class="fa-solid fa-location-dot"></i>&nbsp; Kiambu, Kenya.
+                          </p>
+                    </div>
+                </div>
+
+                <div class="view-more" data-aos="fade-up">
+                    <a routerLink="/farmers" role="button">
+                        VIEW ALL FARMERS&nbsp;
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+          </section> 
+
+
+        <!-- ======= Farmers Section ======= -->
+        <!-- <section id="farmers" class="farmers">
+            <div class="farmers-container">
+
+                <div class="farmers-content">
+                    <div class="section-title farmer-header">
+                        <h2>Meet the Farmers Behind Your Brew</h2>
+                        <p>Click on a farmer from our list below to shop their exceptional coffee straight from their farm.
+                            Experience the connection between farmer and brew like never before.
+                        </p>
+                    </div>
+    
+                    <div class="farmer-list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+    
+                                <div class="farm-image">
+                                    <img src="./resources/farm/farm1.jpg" alt="coffee">
+                                </div>
+    
+                                <div class="farm-name">
+                                    <p>Kiaragana Coffee Factory</p>
+                                </div>
+
+                                <div class="farm-origin">
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
+                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
+                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="swiper-slide">
+    
+                                <div class="farm-image">
+                                    <img src="./resources/farm/farm2.jpg" alt="coffee">
+                                </div>
+    
+                                <div class="farm-name">
+                                    <p>Kiaragana Coffee Factory</p>
+                                </div>
+
+                                <div class="farm-origin">
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
+                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
+                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="swiper-slide">
+    
+                                <div class="farm-image">
+                                    <img src="./resources/farm/farm3.jpg" alt="coffee">
+                                </div>
+    
+                                <div class="farm-name">
+                                    <p>Kiaragana Coffee Factory</p>
+                                </div>
+
+                                <div class="farm-origin">
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
+                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
+                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="swiper-slide">
+    
+                                <div class="farm-image">
+                                    <img src="./resources/farm/farm4.jpg" alt="coffee">
+                                </div>
+    
+                                <div class="farm-name">
+                                    <p>Kiaragana Coffee Factory</p>
+                                </div>
+
+                                <div class="farm-origin">
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
+                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
+                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                
+
+                <div class="view-more">
+                    <a routerLink="/farmers" role="button">
+                        VIEW ALL FARMERS&nbsp;
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+            </div>
+          </section> -->
+        <!-- End Farmers section -->
+
+
+        <!-- ======= Roast Section ======= -->
+        <div class="roast-container">
+            <div class="roast-header">
+                <h2>Shop by Roast</h2>
+                <div class="divider">
+
+                </div>
+            </div>
+
+            <div class="roast-details">
+                <a href="">
+                    <div class="roast-type light">
+                    <img src="./resources/roast/light.jpg" alt="light">
+                    <p>light</p>
+                </div>
+                </a>
+                
+
+                <a href="">
+                    <div class="roast-type lightmed">
+                    <img src="./resources/roast/lightmed.jpg" alt="lightmed">
+                    <p>light medium</p>
+                </div>
+                </a>
+                
+                <a href="">
+                    <div class="roast-type med">
+                    <img src="./resources/roast/med.avif" alt="med">
+                    <p>medium</p>
+                </div>
+                </a>
+
+                <a href="">
+                    <div class="roast-type meddark">
+                    <img src="./resources/roast/meddark.jpg" alt="meddark">
+                    <p>medium dark</p>
+                </div>
+                </a>
+
+                <a href="">
+                    <div class="roast-type dark">
+                    <img src="./resources/roast/dark.avif" alt="dark">
+                    <p>dark</p>
+                </div>
+                </a>
+                
+
+                
+            </div>
+        </div>
+        <!-- End SELECT ROAST -->
+
+        <!-- ======= Latest Coffees Section ======= -->
+        <div class="latest-container">
+            <div class="latest-header">
+                <h2>Latest Coffees</h2>
+                <div class="divider">
+
+                </div>
+            </div>
+
+            <div class="latest-products">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        <p>Nutty and Toasty</p>
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-02.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        <p>Nutty and Toasty</p>
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-03.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        <p>Nutty and Toasty</p>
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-04.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        <p>Nutty and Toasty</p>
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./resources/packaging/pkg7.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        <p>Nutty and Toasty</p>
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./resources/packaging/pkg8.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        <p>Nutty and Toasty</p>
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-more">
+                <a routerLink="/farmers" role="button">
+                    VIEW MORE COFFEE&nbsp;
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+        <!-- End Latest Coffees Section -->
+
+        <!-- ======= CTA Section ======= -->
+        <div class="cta-container">
+            <div class="cta-card one">
+                <div class="cta-content">
+
+                    <p>Get your <strong>DECAF</strong> fresh</p>
+
+                    <div class="cta-btn">
+                        <a href="">SHOP NOW &nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cta-card two">
+                <div class="cta-content">
+
+                    <p>Fill your <strong>PODS</strong> with quality coffee.</p>
+
+                    <div class="cta-btn">
+                        <a href="">SHOP NOW &nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- End CTA Section -->
+
+        <!-- ======= Most Popular Section ======= -->
+        <div class="popular-container">
+            <div class="swiper popular-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <div class="rating">
+                            <p><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        </div>
+
+                        <div class="name">
+                            <p>Mettle</p>
+                            <p>Nutty and Toasty</p>
+                        </div> 
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-slide">
+
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <div class="rating">
+                            <p><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        </div>
+
+                        <div class="name">
+                            <p>Mettle</p>
+                            <p>Nutty and Toasty</p>
+                        </div> 
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="swiper-slide">
+
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <div class="rating">
+                            <p><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        </div>
+
+                        <div class="name">
+                            <p>Mettle</p>
+                            <p>Nutty and Toasty</p>
+                        </div> 
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="swiper-slide">
+
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <div class="rating">
+                            <p><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        </div>
+
+                        <div class="name">
+                            <p>Mettle</p>
+                            <p>Nutty and Toasty</p>
+                        </div> 
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="swiper-slide">
+
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <div class="rating">
+                            <p><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        </div>
+
+                        <div class="name">
+                            <p>Mettle</p>
+                            <p>Nutty and Toasty</p>
+                        </div> 
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="swiper-slide">
+
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <div class="rating">
+                            <p><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        </div>
+
+                        <div class="name">
+                            <p>Mettle</p>
+                            <p>Nutty and Toasty</p>
+                        </div> 
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+            <div class="popular-header">
+                <h2>Most Popular</h2>
+                <p>The Most Trending Coffee</p>
+                <div class="popular-cta">
+                    <a href="">VIEW MORE&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Most Popular section -->
+
+        <!-- ======= Subscribe Section ======= -->
+        <div class="subscribe-container">
+
+            <div class="subscribe-content">
+                <div class="subscribe-header">
+                    <h2>Subscribe To Our Email And Get up to 15% Off</h2>
+                </div>
+            
+                <div class="subscribe-form">
+                    <form method="get" action="">
+                        <div class="newsletter">
+                            <input type="email" class="email-input" maxlength="256" name="Newsletter-Form-4"
+                                aria-label="Enter email address" placeholder="Enter email address" id="Newsletter-Form-4"
+                                required="" />
+            
+                            <input type="submit" value="Subscribe" class="subscribe-btn" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <!-- ======= End of Subscribe Section ======= -->
+
+
+        <!-- services container -->
+        <div class="services-container">
+            <div class="services-card one">
+                <div class="service-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+
+                <div class="service-header">
+                    <h2>Fast Delivery</h2>
+                </div>
+
+                <div class="service-text">
+                    <p>And free returns. See checkout for delivery dates.</p>
+                </div>
+            </div>
+
+            <div class="services-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-fingerprint"></i>
+                </div>
+
+                <div class="service-header">
+                    <h2>Safe Payment</h2>
+                </div>
+
+                <div class="service-text">
+                    <p>Pay with the world’s most popular and secure payment methods.</p>
+                </div>
+            </div>
+
+            <div class="services-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+
+                <div class="service-header">
+                    <h2>24/7 Help Center</h2>
+                </div>
+
+                <div class="service-text">
+                    <p>Have a question? Call a Specialist or chat online.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- END OF servcies container -->
+
+        <!-- Become a seller section -->
+        <div class="seller-container">
+            <div class="how-cta" data-aos="fade-up">
+                <div class="cta-image" data-aos="fade-right" data-aos-delay="400">
+                    <img src="./resources/sellerbg.webp" alt="farmer" >
+                </div>
+                <div class="cta-content" data-aos="fade-left" data-aos-delay="600">
+                    <h4><span class="white">Des</span>igned for <br> <span class="white">Cof</span>fee Lovers everywhere</h4>
+                    <p>Become a seller and join us in reshaping the future of the coffee sector.</p>
+                    <div class="cta-btn"><a href="">SELL NOW&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                </div>
+              </div>
+        </div>
+        <!-- END OF Become a seller section -->
+
+
+    </div>
+
+
+    
+</body>
+</html>
