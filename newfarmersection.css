@@ -151,3 +151,123 @@
     padding: .5rem 1rem;
     color: #000000;
   }
+
+
+
+
+
+
+
+  /* FARMER GRID VIEW */
+  .farmers-container {
+    /* text-align: center; */
+    /* border: 2px solid blue; */
+    margin-bottom: 6rem;
+    padding: .5rem;
+    text-align: center;
+  }
+
+  .farmers-container > * {
+    /* border: 2px solid black; */
+    margin-block: 1rem;
+  }
+
+  .farmer-list {
+    /* border: 2px solid red; */
+    display: grid;
+    max-width: 1000px;
+    margin: auto;
+    grid-template-areas: "farmer-one farmer-one   farmer-four farmer-five"
+                         "farmer-two farmer-three farmer-four farmer-six";
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 10px;                         
+  }
+
+  /* .farmer-list > * {
+    border: 2px solid black;
+  } */
+
+  .farmer-one {
+    grid-area: farmer-one;
+    background-image: url(https://img.freepik.com/free-photo/harvesting-wheat-tranquil-meadow-sunset-generated-by-ai_24640-80628.jpg?size=626&ext=jpg);
+  }
+
+  .farmer-two {
+    grid-area: farmer-two;
+    background-image: url(https://img.freepik.com/free-photo/tractor-agricultural-machine-cultivating-field_342744-896.jpg?size=626&ext=jpg);
+  }
+
+  .farmer-three {
+    grid-area: farmer-three;
+    background-image: url(https://img.freepik.com/free-photo/strawberry-field_74190-4881.jpg?size=626&ext=jpg);
+  }
+
+  .farmer-four {
+    grid-area: farmer-four;
+    background-image: url(https://img.freepik.com/free-photo/aerial-shot-rice-terrace-sunlight-evening-gianyar-bali-indonesia_181624-60419.jpg?size=626&ext=jpg);
+  }
+
+  .farmer-five {
+    grid-area: farmer-five;
+    background-image: url(https://img.freepik.com/free-photo/high-angle-farmland-view_23-2148579680.jpg?size=626&ext=jpg);
+  }
+
+  .farmer-six {
+    grid-area: farmer-six;
+    background-image: url(https://img.freepik.com/free-photo/sunny-meadow-landscape_1112-134.jpg?size=626&ext=jpg);
+  }
+  
+  .farmer {
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    border-radius: .5rem;
+
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .farmer::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    position: absolute;
+    opacity: .3;
+    z-index: -1;
+
+    border-radius: .5rem;
+  }
+
+  .farmer-header p {
+    color: #3a3a3b;
+    width: 70%;
+    margin-inline: auto;
+
+    margin-bottom: 1.75rem;
+    font-family: Raleway;
+  }
+
+  .farmer p {
+    padding: .5rem;
+  }
+
+  .farmers-container .view-more {
+    margin-top: 4rem;
+  }
+
+  .farmers-container .view-more a {
+    font-family: "Raleway", sans-serif;
+    width: fit-content;
+    font-weight: 600;
+    background-color: #b08048;
+    padding: .5rem 1rem;
+    color: #000000;
+  }
+  
+  

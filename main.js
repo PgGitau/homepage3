@@ -11,7 +11,7 @@
         delay: 5000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
-      },
+       },
       // loopFillGroupWithBlank: true,
       // pagination: {
       //   el: '.swiper-pagination',
