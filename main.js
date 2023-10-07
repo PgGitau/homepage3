@@ -7,11 +7,11 @@
     spaceBetween: 30,
     effect: "fade",
     loop: true,
-    // autoplay: {
-    //   delay: 5000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    //  },
+      autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     // loopFillGroupWithBlank: true,
     // pagination: {
     //   el: '.swiper-pagination',
@@ -24,40 +24,6 @@
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-  });
-
-  var swiper = new Swiper(".farmer-list", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-
-    loop: true,
-    loopFillGroupWithBlank: true,
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   clickable: true,
-    // },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      // when window width is 425px - 640px
-      425: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      // when window width is 640px - 900px
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-
-      // when window width is >= 900px
-      //  900: {
-      //    slidesPerView: 4,
-      //    spaceBetween: 30
-      //  }
     },
   });
 
@@ -151,12 +117,17 @@
 
   // Get the button that opens the modal
   var btn = document.getElementById("myBtn");
+  var btn2 = document.getElementById("myBtn2");
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks the button, open the modal
   btn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  btn2.onclick = function () {
     modal.style.display = "block";
   };
 
