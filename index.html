@@ -110,13 +110,13 @@
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide one">
-                    <div class="image">
+                    <div class="image" data-aos="fade-left">
                         <img src="./resources/hero1.jpg" alt="farm">
                     </div>
 
-                    <div class="hero-content">
+                    <div class="hero-content" data-aos="fade-up">
                         <h1>Why settle for secondhand when you can have it direct from farm?</h1>
-                        <p class="hero-par2">100% Direct | 100% Transparent | 100% Pure Coffee</p>
+                        <p class="hero-par2">100% Direct</p>
                         <div class="hero-button">
                             <a class="hero-btn" routerLink="/Coffee" role="button">SHOP NOW&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
                         </div>
@@ -126,8 +126,8 @@
                 <div class="swiper-slide two">
 
                     <div class="hero-content">
-                        <h1>Pick your favorite coffee roast</h1>
-                        <p class="hero-par2">100% Direct | 100% Transparent | 100% Pure Coffee</p>
+                        <h1>Single origin coffee</h1>
+                        <p class="hero-par2">100% Traceable</p>
                         <div class="hero-button">
                             <a class="hero-btn" routerLink="/Coffee" role="button">SHOP NOW&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
                         </div>
@@ -140,10 +140,10 @@
                     </div>
 
                     <div class="hero-content">
-                        <h1>Shop and get up to 15% off your coffee</h1>
+                        <h1>Shop direct from farm and get up to 15% off.</h1>
                         <p class="hero-par2">100% Direct | 100% Transparent | 100% Pure Coffee</p>
                         <div class="hero-button">
-                            <a class="hero-btn" routerLink="/Coffee" role="button">SHOP NOW&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
+                            <a class="hero-btn" routerLink="/Coffee" role="button">SHOP & SAVE&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -153,21 +153,21 @@
 
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
         </section>
         <!-- End Hero -->
 
         <section id="farmers" class="farmers">
             <div class="farmers-container">
 
-                <div class="section-title farmer-header" data-aos="fade-in" data-aos-delay="100">
+                <div class="section-title farmer-header" data-aos="fade-up" data-aos-delay="100">
                     <h2>Shop by farm</h2>
-                    <p>Click on a farmer from our list below to shop their exceptional coffee straight from their farm.
+                    <!-- <p>Click on a farmer from our list below to shop their exceptional coffee straight from their farm.
                         Experience the connection from farm to cup like never before.
-                    </p>
+                    </p> -->
                 </div>
 
-                <div class="farmer-list">
+                <div class="farmer-list" data-aos="fade-up">
                     <a href="#" class="farmer farmer-one">
                         <div>
                             <p>Riaikania Coffee Factory <br>
@@ -206,7 +206,7 @@
                     </div>
                 </div>
 
-                <div class="view-more" data-aos="fade-up">
+                <div class="view-more">
                     <a routerLink="/farmers" role="button">
                         VIEW ALL FARMERS&nbsp;
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -216,176 +216,31 @@
           </section> 
 
 
-        <!-- ======= Farmers Section ======= -->
-        <!-- <section id="farmers" class="farmers">
-            <div class="farmers-container">
-
-                <div class="farmers-content">
-                    <div class="section-title farmer-header">
-                        <h2>Meet the Farmers Behind Your Brew</h2>
-                        <p>Click on a farmer from our list below to shop their exceptional coffee straight from their farm.
-                            Experience the connection between farmer and brew like never before.
-                        </p>
-                    </div>
-    
-                    <div class="farmer-list">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-    
-                                <div class="farm-image">
-                                    <img src="./resources/farm/farm1.jpg" alt="coffee">
-                                </div>
-    
-                                <div class="farm-name">
-                                    <p>Kiaragana Coffee Factory</p>
-                                </div>
-
-                                <div class="farm-origin">
-                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
-                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
-                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
-                                </div>
-                                
-                            </div>
-
-                            <div class="swiper-slide">
-    
-                                <div class="farm-image">
-                                    <img src="./resources/farm/farm2.jpg" alt="coffee">
-                                </div>
-    
-                                <div class="farm-name">
-                                    <p>Kiaragana Coffee Factory</p>
-                                </div>
-
-                                <div class="farm-origin">
-                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
-                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
-                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
-                                </div>
-                                
-                            </div>
-
-                            <div class="swiper-slide">
-    
-                                <div class="farm-image">
-                                    <img src="./resources/farm/farm3.jpg" alt="coffee">
-                                </div>
-    
-                                <div class="farm-name">
-                                    <p>Kiaragana Coffee Factory</p>
-                                </div>
-
-                                <div class="farm-origin">
-                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
-                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
-                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
-                                </div>
-                                
-                            </div>
-
-                            <div class="swiper-slide">
-    
-                                <div class="farm-image">
-                                    <img src="./resources/farm/farm4.jpg" alt="coffee">
-                                </div>
-    
-                                <div class="farm-name">
-                                    <p>Kiaragana Coffee Factory</p>
-                                </div>
-
-                                <div class="farm-origin">
-                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Kiambu, Kenya</p>
-                                    <p><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;Area: 150 Ha</p>
-                                    <p><i class="fa-solid fa-flag-checkered"></i>&nbsp;&nbsp;Founded: 1991</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                       
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-                
-
-                <div class="view-more">
-                    <a routerLink="/farmers" role="button">
-                        VIEW ALL FARMERS&nbsp;
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-
-            </div>
-          </section> -->
-        <!-- End Farmers section -->
-
-
         <!-- ======= Roast Section ======= -->
-        <div class="roast-container">
-            <div class="roast-header">
+        <div class="roast-container" data-aos="fade-up">
+            <div class="roast-header" data-aos="fade-up">
                 <h2>Shop by Roast</h2>
             </div>
 
-            <!-- <div class="roast-details">
-                <a href="">
-                    <div class="roast-type light">
-                    <img src="./resources/roast/coffeebeans.jpg" alt="light">
-                    <p>light</p>
-                </div>
-                </a>
-                
-
-                <a href="">
-                    <div class="roast-type lightmed">
-                    <img src="./resources/roast/lightmed.jpg" alt="lightmed">
-                    <p>light medium</p>
-                </div>
-                </a>
-                
-                <a href="">
-                    <div class="roast-type med">
-                    <img src="./resources/roast/med.avif" alt="med">
-                    <p>medium</p>
-                </div>
-                </a>
-
-                <a href="">
-                    <div class="roast-type meddark">
-                    <img src="./resources/roast/meddark.jpg" alt="meddark">
-                    <p>medium dark</p>
-                </div>
-                </a>
-
-                <a href="">
-                    <div class="roast-type dark">
-                    <img src="./resources/roast/dark.avif" alt="dark">
-                    <p>dark</p>
-                </div>
-                </a>
-                
-
-                
-            </div> -->
-
+           
             <div class="roast-details2">
-                <div class="roast-card2 light2">
+                <div class="roast-card2 light2" data-aos="fade-right">
                     <p>light roast</p>
                 </div>
 
-                <div class="roast-card2 lightmed2">
+                <div class="roast-card2 lightmed2" data-aos="fade-up">
                     <p>light medium roast</p>
                 </div>
 
-                <div class="roast-card2 med2">
+                <div class="roast-card2 med2" data-aos="fade-right">
                     <p>medium roast</p>
                 </div>
 
-                <div class="roast-card2 meddark2">
+                <div class="roast-card2 meddark2" data-aos="fade-up">
                     <p>medium dark roast</p>
                 </div>
 
-                <div class="roast-card2 dark2">
+                <div class="roast-card2 dark2" data-aos="fade-left">
                     <p>dark roast</p>
                 </div>
             </div>
@@ -393,15 +248,41 @@
         <!-- End SELECT ROAST -->
 
         <!-- ======= Latest Coffees Section ======= -->
-        <div class="latest-container">
+        <div class="latest-container" data-aos="fade-up">
             <div class="latest-header">
                 <h2>Latest Coffees</h2>
             </div>
 
             <div class="latest-products">
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-01.png" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+
+                    <div class="latestadd-actions">
+                        <a routerLink="/coffee" role="button" id="myBtn">
+                          Add To Cart <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                        <a routerLink="/wishlist" role="button">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-02.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -415,9 +296,9 @@
                     </div>
                 </div>
 
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-02.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-03.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -431,9 +312,9 @@
                     </div>
                 </div>
 
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-03.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-04.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -447,9 +328,9 @@
                     </div>
                 </div>
 
-                <div class="product-item">
+                <div class="product-item large" data-aos="fade-up" data-aos-delay="500">
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-04.jpg" alt="package">
+                        <img src="./resources/packaging/pkg7.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -463,9 +344,9 @@
                     </div>
                 </div>
 
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up" data-aos-delay="600">
                     <div class="product-image">
-                        <img src="./resources/packaging/pkg7.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-03.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -479,9 +360,25 @@
                     </div>
                 </div>
 
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up" data-aos-delay="700">
                     <div class="product-image">
-                        <img src="./resources/packaging/pkg8.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-02.png" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <p>Mettle</p>
+                        
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-aos="fade-up" data-aos-delay="800">
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-03.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -497,18 +394,151 @@
 
             </div>
 
-            <div class="view-more">
+            <div class="view-more" data-aos="fade-up">
                 <a routerLink="/farmers" role="button">
                     VIEW MORE COFFEE&nbsp;
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </div>
+
         </div>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="product-form">
+                <div class="col">
+                  <app-tabs [tabsArray]="tabs" (onTabChange)="tabChange($event)" ></app-tabs>
+                </div>
+
+                  <div *ngIf="activatedTabIndex == 0">
+                      
+                      <form action="google.com" method="post">
+                          <select id="packsize" name="packsize" required>
+                            <option value="">Choose Pack Size...</option>
+                            <option value="18.80|12oz">12oz ($18.80)</option>
+                            <option value="46.80|32oz">32oz ($46.80)</option>
+                            <option value="68.20|3lbs">3lbs ($68.20)</option>
+                            <option value="68.20|3lbs">5lbs ($113.00)</option>
+                          </select>
+
+                          <select id="grind" name="grind" required>
+                              <option value="">Choose Grind...</option>
+                              <option value="Whole beans">Whole beans</option>
+                              <option value="Extra coarse">Extra coarse (Cold brews)</option>
+                              <option value="Coarse">Coarse (French press/percolators)</option>
+                              <option value="Medium-coarse">Medium-coarse (Chemex/clever drippers)</option>
+                              <option value="Medium">Medium (Drip/regular)</option>
+                              <option value="Medium-fine">Medium-fine (Pour overs/siphon)</option>
+                              <option value="Fine">Fine (Espresso)</option>
+                              <option value="Super-fine">Super-fine (Turkish)</option>
+                          </select>
+
+                          <select id="roast" name="roast" required>
+                              <option value="">Choose Roast Type...</option>
+                              <option value="Light">Light</option>
+                              <option value="Medium/light">Medium/light</option>
+                              <option value="Medium">Medium</option>
+                              <option value="Medium/dark">Medium/dark</option>
+                              <option value="Dark">Dark</option>
+                          </select>
+
+                          <div class="radio">
+                            <input type="radio" id="onetime" name="subscribe" value="one-time" (click)=toggleDivOff2()>
+                            <label for="onetime">One time purchase</label><br>
+                          
+                            <input type="radio" id="subscribe" name="subscribe" value="subscribed" (click)=toggleDivOn2()>
+                            <label for="subscribe">Subscribe & save 10%</label><br>
+                          
+                            <div *ngIf="isShowDiv2">
+                              <select id="delivery" name="delivery" required>
+                                <option value="">Choose Delivery Period...</option>
+                                <option value="2 weeks">Deliver every 2 weeks</option>
+                                <option value="3 weeks">Deliver every 3 weeks</option>
+                                <option value="month">Deliver every month</option>
+                                <option value="6 weeks">Deliver every 6 weeks</option>
+                                <option value="2 months">Deliver every 2 months</option>
+                            </select>
+                            </div>
+                          </div>
+
+                          <div class="incrdecr">
+                            <button (click)=decrement()>-</button>
+                            <h2 id="counting">{{num}}</h2>
+                            <button (click)=increment()>+</button>
+                          </div>
+
+                          <div class="submit-btn">
+                            <input type="submit" value="ADD TO CART">
+                          </div>
+
+                        </form>
+                  </div>
+
+                  <div *ngIf="activatedTabIndex == 1" class=tab1>
+                      <div class="packaging">
+                        <p>Packaging</p>
+                        <p>Grainpro & Outer Jutebag</p>
+                      </div>
+
+                      <div class="price-lb">
+                        <p>Price/Lb</p>
+
+                        <div class="lb">
+                          <p>1 - 660 lbs</p>
+                          <p>660lbs +</p>
+                        </div>
+
+                        <div class="lb-price">
+                          <p>- $7.70</p>
+                          <p>- $6.93</p>
+                        </div>
+                      </div>
+
+                      <form action="/" method="post">
+                        <div class="radio">
+                          <input type="radio" id="onetime" name="subscribe" value="one-time" (click)=toggleDivOff()>
+                          <label for="onetime">One time purchase</label><br>
+                        
+                          <input type="radio" id="subscribe" name="subscribe" value="subscribed" (click)=toggleDivOn()>
+                          <label for="subscribe">Subscribe & save 10%</label><br>
+                        
+                          <div *ngIf="isShowDiv">
+                            <select id="delivery" name="delivery" required>
+                              <option value="">Choose Delivery Period...</option>
+                              <option value="2 weeks">Deliver every 2 weeks</option>
+                              <option value="3 weeks">Deliver every 3 weeks</option>
+                              <option value="month">Deliver every month</option>
+                              <option value="6 weeks">Deliver every 6 weeks</option>
+                              <option value="2 months">Deliver every 2 months</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="incrdecr">
+                          <button (click)=decrement()>-</button>
+                          <h2 id="counting">{{num}}</h2>
+                          <button (click)=increment()>+</button>
+                        </div>
+
+                        <div class="submit-btn">
+                          <input type="button" value="ADD TO CART">
+                        </div>
+
+                      </form>
+                      
+                  </div>
+              </div>
+            </div>
+          
+          </div>
         <!-- End Latest Coffees Section -->
 
         <!-- ======= CTA Section ======= -->
         <div class="cta-container">
-            <div class="cta-card one">
+            <div class="cta-card one" data-aos="fade-right">
                 <div class="cta-content">
 
                     <p>Get your <strong>DECAF</strong> fresh</p>
@@ -520,7 +550,7 @@
                 </div>
             </div>
 
-            <div class="cta-card two">
+            <div class="cta-card two" data-aos="fade-left">
                 <div class="cta-content">
 
                     <p>Fill your <strong>PODS</strong> with quality coffee.</p>
@@ -536,12 +566,12 @@
 
         <!-- ======= Most Popular Section ======= -->
         <div class="popular-container">
-            <div class="swiper popular-swiper">
+            <div class="swiper popular-swiper" data-aos="fade-left">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
 
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-01.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -570,36 +600,7 @@
                   <div class="swiper-slide">
 
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
-                    </div>
-
-                    <div class="product-name">
-                        <div class="rating">
-                            <p><i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </p>
-                        </div>
-
-                        <div class="name">
-                            <p>Mettle</p>
-                            
-                        </div> 
-                    </div>
-
-                    <div class="product-details">
-                        <p>Origin: Kenya</p>
-                        <p>$18.80 / 12oz</p>
-                    </div>
-                    
-                  </div>
-
-                  <div class="swiper-slide">
-
-                    <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-02.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -628,7 +629,7 @@
                   <div class="swiper-slide">
 
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-03.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -657,7 +658,7 @@
                   <div class="swiper-slide">
 
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-01.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -686,7 +687,36 @@
                   <div class="swiper-slide">
 
                     <div class="product-image">
-                        <img src="./resources/packaging/coffee-bag-01.jpg" alt="package">
+                        <img src="./resources/packaging/coffee-bag-02.png" alt="package">
+                    </div>
+
+                    <div class="product-name">
+                        <div class="rating">
+                            <p><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        </div>
+
+                        <div class="name">
+                            <p>Mettle</p>
+                            
+                        </div> 
+                    </div>
+
+                    <div class="product-details">
+                        <p>Origin: Kenya</p>
+                        <p>$18.80 / 12oz</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="swiper-slide">
+
+                    <div class="product-image">
+                        <img src="./resources/packaging/coffee-bag-03.png" alt="package">
                     </div>
 
                     <div class="product-name">
@@ -717,7 +747,7 @@
                 <div class="swiper-pagination"></div>
               </div>
 
-            <div class="popular-header">
+            <div class="popular-header" data-aos="fade-right">
                 <h2>Most Popular</h2>
                 <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ipsum sapiente quaerat molestiae id nisi nihil maxime ratione itaque explicabo quasi nam soluta, voluptate quisquam tenetur nulla saepe impedit. Veritatis!</p> -->
                 <div class="popular-cta">
@@ -727,10 +757,102 @@
         </div>
         <!-- End of Most Popular section -->
 
-        <!-- ======= Subscribe Section ======= -->
-        <div class="subscribe-container">
+        <!-- Become a seller&cafe section -->
+        <div class="sellercafe-container">
+            <div class="sellercafe-cta" data-aos="fade-up">
 
-            <div class="subscribe-images">
+                <div class="seller sellercafe-card">
+
+                    <div class="cta-image" data-aos="fade-right" data-aos-delay="400">
+                        <img src="./resources/sellerbg.webp" alt="farmer" >
+                    </div>
+
+                    <div class="cta-content" data-aos="fade-left" data-aos-delay="600">
+                        <div id="cta-content1">
+                            <h4><span class="white">Do yo</span>u own a coffee farm?</h4>
+                            <p>Become a seller and make your coffee available on the world's #1 coffee marketplace.</p>
+                            <div class="cta-btn"><a href="">SELL NOW&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="cafe sellercafe-card">
+
+                    <div class="cta-image" data-aos="fade-left" data-aos-delay="400">
+                        <img src="./resources/cafe.jpg" alt="farmer" >
+                    </div>
+
+                    <div class="cta-content" data-aos="fade-right" data-aos-delay="600">
+                        <div id="cta-content2">
+                            <h4>Do you own a café or a roa<span class="white">stery?</span></h4>
+                            <p>Get your coffee from the world's #1 coffee marketplace.</p>
+                            <div class="cta-btn"><a href="">SHOP DIRECT FROM FARM&nbsp; <i class="fa-solid fa-cart-arrow-down"></i></a></div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+              
+        </div>
+        <!-- END OF seller&cafe section -->
+
+        <!-- services container -->
+        <div class="services-container" data-aos="fade-up">
+
+            <div class="services-card one">
+                <div class="service-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+
+                <div class="service-header">
+                    <h2>Fresh Roast</h2>
+                </div>
+
+                <div class="service-text">
+                    <p>Get your coffee fresh everytime, roasted on order.</p>
+                </div>
+            </div>
+
+            <div class="services-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-fingerprint"></i>
+                </div>
+
+                <div class="service-header">
+                    <h2>Safe Payment</h2>
+                </div>
+
+                <div class="service-text">
+                    <p>Pay with the world’s most popular and secure payment methods.</p>
+                </div>
+            </div>
+
+            <div class="services-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+
+                <div class="service-header">
+                    <h2>Fast Delivery</h2>
+                </div>
+
+                <div class="service-text">
+                    <p>And free returns. See checkout for delivery dates.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF servcies container -->
+        
+        
+        <!-- ======= Subscribe Section ======= -->
+        <div class="subscribe-container" data-aos="fade-up">
+
+            <div class="subscribe-images" data-aos="fade-left">
                 <!-- <h2>Brewing Success: One Stat at a Time.</h2> -->
                 <div class="image-card image-one">
                     <img src="https://cdn.pixabay.com/photo/2019/10/31/07/16/coffee-4591173_640.jpg" alt="farmer">
@@ -745,7 +867,7 @@
                 </div>
             </div>
 
-            <div class="subscribe-content">
+            <div class="subscribe-content" data-aos="fade-left">
                 <div class="subscribe-header">
                     <h2>Subscribe To Our Email And Get up to 15% Off</h2>
                 </div>
@@ -769,67 +891,9 @@
         <!-- ======= End of Subscribe Section ======= -->
 
 
-        <!-- services container -->
-        <div class="services-container">
-            <div class="services-card one">
-                <div class="service-icon">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
+        
 
-                <div class="service-header">
-                    <h2>Fast Delivery</h2>
-                </div>
-
-                <div class="service-text">
-                    <p>And free returns. See checkout for delivery dates.</p>
-                </div>
-            </div>
-
-            <div class="services-card">
-                <div class="service-icon">
-                    <i class="fa-solid fa-fingerprint"></i>
-                </div>
-
-                <div class="service-header">
-                    <h2>Safe Payment</h2>
-                </div>
-
-                <div class="service-text">
-                    <p>Pay with the world’s most popular and secure payment methods.</p>
-                </div>
-            </div>
-
-            <div class="services-card">
-                <div class="service-icon">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                </div>
-
-                <div class="service-header">
-                    <h2>24/7 Help Center</h2>
-                </div>
-
-                <div class="service-text">
-                    <p>Have a question? Call a Specialist or chat online.</p>
-                </div>
-
-            </div>
-        </div>
-        <!-- END OF servcies container -->
-
-        <!-- Become a seller section -->
-        <div class="seller-container">
-            <div class="how-cta" data-aos="fade-up">
-                <div class="cta-image" data-aos="fade-right" data-aos-delay="400">
-                    <img src="./resources/sellerbg.webp" alt="farmer" >
-                </div>
-                <div class="cta-content" data-aos="fade-left" data-aos-delay="600">
-                    <h4><span class="white">Own</span> a coffee farm?</h4>
-                    <p>Become a seller and make your coffee available on the world's #1 coffee marketplace.</p>
-                    <div class="cta-btn"><a href="">SELL NOW&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-              </div>
-        </div>
-        <!-- END OF Become a seller section -->
+        
 
 
         <!-- FOOTER SECTION -->
