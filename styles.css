@@ -1258,9 +1258,9 @@ a {
 
   /* MEDIA QUERIES */
   @media (max-width: 768px) {
-    .farmers-container {
+    /* .farmers-container {
       border: 2px solid red;
-    }
+    } */
     .farmer-list {
       /* border: 2px solid red; */
       display: grid;
