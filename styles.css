@@ -1991,7 +1991,7 @@ a {
   /* MEDIA QUERIES */
   @media (max-width: 1024px) {
     .popular-container {
-      border: 2px solid red;
+      /* border: 2px solid red; */
       height: fit-content;
       flex-direction: column-reverse;
     }
