@@ -929,47 +929,164 @@ a {
   }
 
 
-
-  @media (min-width: 1024px) {
+  /* MEDIA QUERIES */
+    /* @media (min-width: 1024px) {
     #hero {
       background-attachment: fixed;
     }
-  }
+  } */
 
   @media (max-width: 768px) {
-    #hero .hero-container {
-        width: 80%;
-        gap: 1.5rem;
-      }
-    #hero h1 {
-        /* border: 2px solid white; */
-        font-size: 40px;
-        line-height: 2.4rem;
-      /* line-height: 36px; */
+    .hero .swiper-slide {
+      /* border: 10px solid black; */
+      flex-direction: column-reverse;
+      justify-content: start;
     }
 
-    #hero p {
-        /* border: 2px solid white; */
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 0;
+    .hero .swiper-slide .hero-content {
+      padding-inline: .5rem;
+      text-align: center;
+      width: 100%;
+      padding-top: 0rem;
+      top: 150px;
+    }
+  
+    .hero .swiper-slide .image {
+      width: 100%;
+      top: 150px;
+    }
+  
+    #hero h1 {
+      font-size: 36px;
+      line-height: 2rem;
+    }
+  
+    #hero .hero-btn {
+      font-size: 14px;
+      padding: 10px 40px;
+    }
+  
+    /* HERO SLIDE ONE */
+    .one .hero-content h1,
+    .one .hero-content p,
+    .one .hero-content .hero-button {
+      left: 0px;
+    }
+
+    .hero .one img {
+      width: 90%;
+    }
+
+    .hero .one .image {
+      display: flex;
+      justify-content: right;
+    }
+
+    /* HERO SLIDE TWO */  
+
+    /* HERO SLIDE THREE */
+    .hero .three {
+      flex-direction: column-reverse;
+    }
+
+    .three .hero-content {
+      left: 0px;
+      top: 0px;
+    }
+
+    .three .hero-button {
+      margin-top: 0rem;
     }
   }
 
-  @media (max-width: 500px) {
+  @media (min-width: 600px) and (max-width: 768px) {    
+    .hero .swiper-slide .hero-content {
+      top: 160px;
+    }
+
+    .hero .swiper-slide .image {
+      top: 70px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 900px) {
+    .hero .swiper-slide .image {
+      /* width: 70%; */
+      position: relative;
+      top: 25vh;
+    }
+    
+    .hero .swiper-slide .hero-content {
+      /* width: 50%; */
+      /* position: relative; */
+      top: 30vh;
+    }
+
+    #hero h1 {
+      font-size: 2.4rem;
+      line-height: 2rem;
+    }
+
+    #hero .hero-btn {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+
+  }
+
+  @media (min-width: 901px) and (max-width: 1000px) {
+    .hero .swiper-slide .image {
+      /* width: 70%; */
+      position: relative;
+      top: 20vh;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+
+    #hero .hero-btn {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1001px) and (max-width: 1220px) {
+    .hero .swiper-slide .image {
+      /* width: 70%; */
+      position: relative;
+      top: 14vh;
+    }
+
+    
+    .hero .swiper-slide .hero-content {
+      /* width: 50%; */
+      /* position: relative; */
+      top: 28vh;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+
+    #hero .hero-btn {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+  }
+  /* @media (max-width: 500px) {
     #hero .hero-container {
         width: 90%;
         gap: 1.5rem;
       }
     #hero h1 {
-        /* border: 2px solid white; */
         font-size: 35px;
         line-height: 2rem;
-      /* line-height: 36px; */
     }
 
     #hero p {
-        /* border: 2px solid white; */
       font-size: 17px;
       line-height: 20px;
       margin-bottom: 0;
@@ -986,13 +1103,11 @@ a {
         width: 100%;
       }
     #hero h1 {
-        /* border: 2px solid white; */
         font-size: 30px;
         line-height: 1.7rem;
     }
 
     #hero p {
-        /* border: 2px solid white; */
       font-size: 16px;
       margin-bottom: 0;
     }
@@ -1001,7 +1116,7 @@ a {
       font-size: 15px;
       padding: 6px 50px;
     }
-  }
+  } */
 
 
 
@@ -1141,6 +1256,44 @@ a {
   }
 
 
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .farmers-container {
+      border: 2px solid red;
+    }
+    .farmer-list {
+      /* border: 2px solid red; */
+      display: grid;
+      width: 96%;
+      margin: auto;
+      grid-template-areas: "farmer-one farmer-two"
+                           "farmer-three farmer-four"
+                           "farmer-five farmer-six";
+      grid-template-rows: repeat(3, 250px);
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .farmer-list {
+      /* border: 2px solid red; */
+      display: grid;
+      width: 96%;
+      margin: auto;
+      grid-template-areas: "farmer-one"
+                           "farmer-two"
+                           "farmer-three"
+                           "farmer-four"
+                           "farmer-five"
+                           "farmer-six";
+      grid-template-rows: repeat(6, 200px);
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+
+
 
 
 
@@ -1180,6 +1333,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     position: relative;
     z-index: 1;
@@ -1224,6 +1378,41 @@ a {
     grid-area: dark;
   }
 
+
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .roast-container {
+      margin: 780px 0 2rem 0;
+   }
+  }
+
+  @media (max-width: 768px) {
+   .roast-details2 {
+     grid-template-areas: "light lightmed"
+                          "dark  dark"
+                          "med   meddark";
+     grid-template-rows: repeat(3, 250px);
+     grid-template-columns: 1fr 1fr;
+   }
+  }
+
+  @media (max-width: 375px) {
+    .roast-details2 {
+      grid-template-areas: "light"
+                           "lightmed"
+                           "med"
+                           "meddark"
+                           "dark";
+      grid-template-rows: repeat(5, 250px);
+      grid-template-columns: 1fr;
+    }
+   }
+ 
+   @media (max-width: 425px) {
+    .roast-container {
+      margin: 1260px 0 2rem 0;
+   }
+   }
 
 
 
@@ -1352,6 +1541,14 @@ a {
     color: #fff;
   }
 
+
+  /* MEDIA QUERIES */
+  @media (max-width: 375px) {
+    .latest-products .product-item .product-image {
+      width: 230px;
+    }
+  }
+  
    
 
   /* MODAL STYLING */
@@ -1659,6 +1856,7 @@ a {
     gap: 1rem;
   }
 
+
   .popular-container .swiper-button-next,
   .popular-container .swiper-button-prev {
     color: #1010206e;
@@ -1789,6 +1987,19 @@ a {
     color: #000000;
   }
 
+
+  /* MEDIA QUERIES */
+  @media (max-width: 1024px) {
+    .popular-container {
+      border: 2px solid red;
+      height: fit-content;
+      flex-direction: column-reverse;
+    }
+
+    .popular-container .swiper {
+      width: 100%;
+    }
+  }
 
 
 

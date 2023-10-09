@@ -7,11 +7,11 @@
     spaceBetween: 30,
     effect: "fade",
     loop: true,
-      autoplay: {
-      delay: 5000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
+    //   autoplay: {
+    //   delay: 5000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction: false,
+    // },
     // loopFillGroupWithBlank: true,
     // pagination: {
     //   el: '.swiper-pagination',
@@ -28,7 +28,7 @@
   });
 
   var swiper = new Swiper(".popular-swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -43,6 +43,18 @@
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {     
+			// when window width is 425px - 640px
+			 425: {       
+         slidesPerView: 2,
+         spaceBetween: 10     
+       },    
+      // when window width is 640px - 900px    
+       640: {       
+         slidesPerView: 3,       
+         spaceBetween: 20     
+       }
     },
   });
 
