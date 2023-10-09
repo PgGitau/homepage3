@@ -7,11 +7,11 @@
     spaceBetween: 30,
     effect: "fade",
     loop: true,
-    //   autoplay: {
-    //   delay: 5000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    // },
+      autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     // loopFillGroupWithBlank: true,
     // pagination: {
     //   el: '.swiper-pagination',
