@@ -791,7 +791,7 @@ opacity: .2;
       color: white;
       position: relative;
       padding: .5rem;
-      bottom: 100%;
+      /* bottom: 100%; */
       z-index: 2;
     }
 
@@ -863,6 +863,10 @@ opacity: .2;
      .hero .swiper-button-prev {
       color: #1010206e;
       top: 15%;
+    }
+
+    .hero .swiper-slide .slide-header .hero-content {
+      top: 10%;
     }
   }
 
