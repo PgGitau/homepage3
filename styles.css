@@ -356,6 +356,18 @@ opacity: .2;
     }
   }
 
+  @media (max-width: 1200px) {
+    .cart {
+      margin-left: 2rem;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .cart {
+      margin-left: 0rem;
+    }
+  }
+
   /**
   * Mobile Navigation
   */
@@ -597,7 +609,7 @@ opacity: .2;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100svh;
+    height: 600px;
   }
 
   /* .hero .swiper-slide .slide-header > * {
@@ -833,7 +845,7 @@ opacity: .2;
       height: 200px;
       position: relative;
       right: 0;
-      top: 20%;
+      top: 15%;
     }
   }
 
@@ -867,6 +879,12 @@ opacity: .2;
 
     .hero .swiper-slide .slide-header .hero-content {
       top: 10%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .hero .swiper-slide .slide-header .hero-content {
+      top: 5%;
     }
   }
 
@@ -1004,7 +1022,6 @@ opacity: .2;
   .farmers-container .view-more a,
   .latest-container .view-more a {
     font-family: Outfit;
-    width: fit-content;
     font-weight: 600;
     padding: .5rem 1rem;
     color: #000000;
@@ -1195,25 +1212,6 @@ opacity: .2;
     align-self: center;
   }
 
-  /* .latest-container .view-more a {
-    font-family: Outfit;
-    width: fit-content;
-    font-weight: 600;
-    background-color: #b08048;
-    padding: .5rem 1rem;
-    color: #000000;
-  } */
-
-  /* .latest-container .latest-products {
-    border: 2px solid black;
-    padding: .5rem;
-
-    display: flex;
-    justify-content: center;
-    gap: 1.7rem;
-    flex-wrap: wrap;
-  } */
-
   .latest-products {
     /* border: 2px solid black; */
     display: grid;
@@ -1369,7 +1367,6 @@ opacity: .2;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: fit-content;
   }
 
   .modal-content .product-form {
@@ -1466,6 +1463,18 @@ opacity: .2;
     display: flex;
     gap: 1rem;
   }
+
+  /* media queries */
+  @media (max-width: 425px) {
+    .modal-content .product-form .roasted .option-list {
+      flex-wrap: wrap;
+    }
+
+    #delivery,
+    #delivery2 {
+      width: 100%;
+    }
+  }
   /* END OF MODAL STYLING */
 
 
@@ -1544,33 +1553,16 @@ opacity: .2;
     /* border: 2px solid black; */
     font-family: Outfit;
     padding: 1rem;
-    width: 60%;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5rem;
-
-    /* position: relative;
-    top: 35%; */
-  }
-
-  .one .cta-content {
-    /* float: right; */
-    width: 50%;
-  }
-
-  .two .cta-content {
-    padding-left: 2.5rem;
   }
 
   .cta-container .cta-content p {
     font-family: Outfit;
     color: #fff;
-    font-size: 2rem;
-  }
-
-  .one .cta-content p {
-    /* color: #000000; */
     font-size: 2rem;
   }
 
@@ -1590,10 +1582,20 @@ opacity: .2;
   /* CTA-CONTAINER MEDIA QUERIES */
   @media (max-width: 768px) {
     .cta-container {
-      flex-wrap: wrap;
+      padding-inline: .5rem;
+      gap: .5rem;
     }
   }
 
+  @media (max-width: 600px) {
+    .cta-container {
+      flex-wrap: wrap;
+    }
+
+    .cta-container > * {
+      height: 350px;
+    }
+  }
 
 
 
@@ -1760,12 +1762,16 @@ opacity: .2;
   @media (max-width: 1024px) {
     .popular-container {
       /* border: 2px solid red; */
-      height: fit-content;
+      height: auto;
       flex-direction: column-reverse;
     }
 
     .popular-container .swiper {
       width: 100%;
+    }
+
+    .popular-swiper .swiper-wrapper .swiper-slide {
+      height: 500px;
     }
 
     .popular-container .popular-header .popular-cta {
@@ -1779,6 +1785,36 @@ opacity: .2;
     .popular-header {
       height: 60px;
       width: 50%;
+    }
+
+    .popular-container .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: -4px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .popular-header {
+      width: 60%;
+    }
+
+    .popular-header h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .popular-header {
+      width: 80%;
+    }
+
+    .popular-header h2 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .popular-header {
+      width: 90%;
     }
   }
 
@@ -1882,8 +1918,6 @@ opacity: .2;
   }
 
   .subscribe-form .newsletter {
-    /* border: 1px solid black; */
-    width: fit-content;
     border-radius: .5rem;
   }
 
