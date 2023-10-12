@@ -2046,10 +2046,6 @@ opacity: .2;
     border-radius: 10px;
   }
 
-  .sellercafe-container > * {
-    /* border: 2px solid blue; */
-  }
-
   .sellercafe-container .sellercafe-card {
     display: flex;
     align-items: center;
