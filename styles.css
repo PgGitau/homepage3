@@ -30,6 +30,15 @@ color: inherit;
 border-radius: 50px;
 }
 
+/* input,
+button,
+select,
+a,
+.swiper-button-next,
+.swiper-button-next {
+  -webkit-tap-highlight-color: transparent;
+} */
+
 #hero h1,
 .farmer-header h2,
 .subscribe-header h2,
@@ -377,7 +386,7 @@ opacity: .2;
 
   .navbar-mobile .mobile-nav-toggle {
     position: absolute;
-    top: 15px;
+    top: 30px;
     right: 15px;
     color: #fff;
   }
@@ -785,6 +794,7 @@ opacity: .2;
   @media (max-width: 900px) {
     .mobile-btn {
       display: block;
+      z-index: 2;
     } 
 
     #hero p {
@@ -794,10 +804,7 @@ opacity: .2;
     .mobilehero-btn {
       background-color: black;
       color: white;
-      position: relative;
       padding: .5rem;
-      /* bottom: 100%; */
-      z-index: 2;
     }
 
     .hero-content .hero-button{
@@ -995,6 +1002,10 @@ opacity: .2;
     color: #fff;
   }
 
+  .three .farmers-container .farmer-header h2 {
+    color: #000000;
+  }
+
   .farmer-header p {
     color: #3a3a3b;
     width: 70%;
@@ -1013,7 +1024,8 @@ opacity: .2;
   } */
 
   .farmers-container .view-more a,
-  .latest-container .view-more a {
+  .latest-container .view-more a,
+  .popular-container .view-more a {
     font-family: Outfit;
     font-weight: 600;
     padding: .5rem 1rem;
@@ -1023,7 +1035,8 @@ opacity: .2;
   }
 
   .farmers-container .view-more a:hover,
-  .latest-container .view-more a:hover {
+  .latest-container .view-more a:hover,
+  .popular-container .view-more a:hover {
     cursor: pointer;
     letter-spacing: 3px;
   }
@@ -1031,14 +1044,7 @@ opacity: .2;
 
   /* MEDIA QUERIES */
   @media (max-width: 768px) {
-    /* .farmers-container {
-      border: 2px solid red;
-    } */
     .farmer-list {
-      /* border: 2px solid red; */
-      display: grid;
-      width: 96%;
-      margin: auto;
       grid-template-areas: "farmer-one farmer-two"
                            "farmer-three farmer-four"
                            "farmer-five farmer-six";
@@ -1050,10 +1056,6 @@ opacity: .2;
 
   @media (max-width: 425px) {
     .farmer-list {
-      /* border: 2px solid red; */
-      display: grid;
-      width: 96%;
-      margin: auto;
       grid-template-areas: "farmer-one"
                            "farmer-two"
                            "farmer-three"
@@ -1062,7 +1064,6 @@ opacity: .2;
                            "farmer-six";
       grid-template-rows: repeat(6, 200px);
       grid-template-columns: 1fr;
-      gap: 10px;
     }
   }
 
@@ -1992,6 +1993,10 @@ opacity: .2;
 
     .sellercafe-card .cta-content h4 {
       right: 0;
+      font-size: 2.5rem;
+      line-height: 2.3rem;
+      width: 90%;
+      margin-inline: auto;
     }
 
     .sellercafe-card .cta-content p {
@@ -2350,7 +2355,7 @@ opacity: .2;
     flex-direction: column;
     gap: .5rem;
     align-items: center;
-    border-top: 2px solid #00d1ff;
+    border-top: 2px solid #cbcecf78;
     padding-block: 2rem;
     text-align: center;
   }
