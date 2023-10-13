@@ -7,11 +7,11 @@
     spaceBetween: 30,
     effect: "fade",
     loop: true,
-    // autoplay: {
-    //   delay: 5000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     // loopFillGroupWithBlank: true,
     // pagination: {
     //   el: '.swiper-pagination',
@@ -31,11 +31,11 @@
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
