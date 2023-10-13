@@ -1177,6 +1177,12 @@ opacity: .2;
     text-align: center;
     background-color: #151915;
     color: #fff;
+    cursor: pointer;
+  }
+
+  .product-item .latestadd-actions a:hover,
+  .popular-container .popularadd-actions a:hover {
+    word-spacing: 3px;
   }
 
 
@@ -1298,20 +1304,21 @@ opacity: .2;
 
   .modal-content .product-form .roasted .incrdecr,
   .modal-content .product-form .green .incrdecr {
+    background-color: #5d6568;
     display: flex;
-    gap: .5rem;
+    align-items: center;
+    gap: 2rem;
   }
 
-  .modal-content .product-form .roasted .incrdecr button,
-  .modal-content .product-form .green .incrdecr button {
-    padding-inline: .2rem;
+  .modal-content .product-form .roasted .incrdecr div,
+  .modal-content .product-form .green .incrdecr div {
+    background-color: rgb(197, 188, 188);
+    padding: .2rem .3rem;
+    color: #000000;
+    padding-inline: 1rem;
     font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .modal-content .product-form .roasted .incrdecr .submit-btn {
-    display: flex;
-    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
   }
 
   .modal-content .product-form .submit-btn button {
@@ -1331,11 +1338,6 @@ opacity: .2;
     border-radius: .5rem;
     padding: 2rem;
   }
-
-  /* .modal-content .product-form .green > *,
-  .modal-content .product-form .green  {
-    border: 2px solid red;
-  } */
 
   .modal-content .product-form .green .packaging,
   .modal-content .product-form .green .price-lb {

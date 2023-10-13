@@ -338,7 +338,7 @@
             
                             <div class="view-more" >
                                 <a routerLink="/farmers" role="button">
-                                    VIEW ALL FARMERS&nbsp;
+                                    VIEW ALL FARMS&nbsp;
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
@@ -411,10 +411,10 @@
                     </div>
 
                     <div class="latestadd-actions">
-                        <a routerLink="/coffee" role="button" id="myBtn">
+                        <a role="button" id="myBtn">
                           Add To Cart <i class="fa-solid fa-cart-arrow-down"></i>
                         </a>
-                        <a routerLink="/wishlist" role="button">
+                        <a role="button" title="wishlist">
                             <i class="fa-solid fa-heart"></i>
                         </a>
                     </div>
@@ -559,7 +559,7 @@
             
                         <form action="google.com" method="post">
                             <div class="option-list">
-                                <select id="packsize" name="packsize" required>
+                                <select id="packsize" name="packsize" title="packsize" required>
                                     <option value="">Choose Pack Size...</option>
                                     <option value="18.80|12oz">12oz ($18.80)</option>
                                     <option value="46.80|32oz">32oz ($46.80)</option>
@@ -567,7 +567,7 @@
                                     <option value="68.20|3lbs">5lbs ($113.00)</option>
                                 </select>
                 
-                                <select id="grind" name="grind" required>
+                                <select id="grind" name="grind" title="grind" required>
                                     <option value="">Choose Grind...</option>
                                     <option value="Whole beans">Whole beans</option>
                                     <option value="Extra coarse">Extra coarse (Cold brews)</option>
@@ -579,7 +579,7 @@
                                     <option value="Super-fine">Super-fine (Turkish)</option>
                                 </select>
                 
-                                <select id="roast" name="roast" required>
+                                <select id="roast" name="roast" title="roast" required>
                                     <option value="">Choose Roast Type...</option>
                                     <option value="Light">Light</option>
                                     <option value="Medium/light">Medium/light</option>
@@ -601,7 +601,7 @@
                                 </div>
             
                                 <div *ngIf="isShowDiv2">
-                                    <select id="delivery" name="delivery" required>
+                                    <select id="delivery" name="delivery" title="delivery" required>
                                         <option value="">Choose Delivery Period...</option>
                                         <option value="2 weeks">Deliver every 2 weeks</option>
                                         <option value="3 weeks">Deliver every 3 weeks</option>
@@ -613,9 +613,9 @@
                             </div>
             
                             <div class="incrdecr">
-                                <button (click)=decrement()>-</button>
-                                <h2 id="counting">{{num}}</h2>
-                                <button (click)=increment()>+</button>
+                                <div (click)=decrement() class="decrement">-</div>
+                                <h2 id="counting">1</h2>
+                                <div (click)=increment() class="increment">+</div>
                             </div>
             
                             <div class="submit-btn">
@@ -658,7 +658,7 @@
                                 </div>
 
                                 <div *ngIf="isShowDiv">
-                                    <select id="delivery2" name="delivery" required>
+                                    <select id="delivery2" name="delivery" title="delivery" required>
                                         <option value="">Choose Delivery Period...</option>
                                         <option value="2 weeks">Deliver every 2 weeks</option>
                                         <option value="3 weeks">Deliver every 3 weeks</option>
@@ -670,9 +670,9 @@
                             </div>
             
                             <div class="incrdecr">
-                                <button (click)=decrement()>-</button>
-                                <h2 id="counting">{{num}}</h2>
-                                <button (click)=increment()>+</button>
+                                <div (click)=decrement() class="decrement">-</div>
+                                <h2 id="counting2">{{num}}</h2>
+                                <div (click)=increment() class="increment">+</div>
                             </div>
             
                             <div class="submit-btn">
@@ -753,10 +753,10 @@
                     </div>
 
                     <div class="popularadd-actions">
-                        <a routerLink="/coffee" role="button" id="myBtn2">
+                        <a role="button" id="cartbtn">
                           Add To Cart <i class="fa-solid fa-cart-arrow-down"></i>
                         </a>
-                        <a routerLink="/wishlist" role="button">
+                        <a role="button" title="wishlist">
                             <i class="fa-solid fa-heart"></i>
                         </a>
                     </div>
